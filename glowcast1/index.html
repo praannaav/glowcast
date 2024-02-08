@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLOWCAST</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Glowcast</h1>
+    <form id="inputForm">
+      <div class="input-group">
+        <label for="boxLength">Box Length :</label>
+        <input type="text" id="boxLength" placeholder="in inches" required>
+      </div>
+      <div class="input-group">
+        <label for="boxWidth">Box Width :</label>
+        <input type="text" id="boxWidth" placeholder="in inches" required>
+      </div>
+      <div class="input-group">
+        <label for="boxHeight">Box Height :</label>
+        <input type="text" id="boxHeight" placeholder="in inches" required>
+      </div>
+      <div class="input-group">
+        <label for="patternLength">Pattern Length (in cm):</label>
+        <input type="text" id="patternLength" value="0" required>
+      </div>
+      <div class="input-group">
+        <label for="patternWidth">Pattern Width (in cm):</label>
+        <input type="text" id="patternWidth" value="0" required>
+      </div>
+      <div class="input-group">
+        <label for="patternMaxHeight">Pattern Max Height (in cm):</label>
+        <input type="text" id="patternMaxHeight" value="0" required>
+      </div>
+      <div class="input-group">
+        <label for="sandCost">Cost per kg of Sand:</label>
+        <input type="text" id="sandCost" placeholder="in ₹" required>
+      </div>
+      <div class="input-group">
+        <label for="castingWeight">Casting Weight (in kg):</label>
+        <input type="text" id="castingWeight" required>
+      </div>
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="result" class="result-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
